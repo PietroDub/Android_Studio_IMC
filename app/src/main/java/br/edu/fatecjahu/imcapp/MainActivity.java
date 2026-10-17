@@ -2,6 +2,7 @@ package br.edu.fatecjahu.imcapp;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -18,11 +19,20 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        TextView textoMensagem = findViewById(R.id.textoMensagem);
-        Button botaoComecar = findViewById(R.id.botaoComecar);
+        EditText campoPeso = findViewById(R.id.campoPeso);
+        EditText campoAltura = findViewById(R.id.campoAltura);
+        Button botaoCalcular = findViewById(R.id.botaoCalcular);
+        TextView textoResultado = findViewById(R.id.textoResultado);
 
-        botaoComecar.setOnClickListener(view -> {
-            textoMensagem.setText(R.string.mensagem_botao);
+        botaoCalcular.setOnClickListener(view -> {
+            String pesoTexto = campoPeso.getText().toString().trim();
+            String alturaTexto = campoAltura.getText().toString().trim();
+
+            textoResultado.setText(getString(
+                    R.string.valores_informados,
+                    pesoTexto,
+                    alturaTexto
+            ));
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

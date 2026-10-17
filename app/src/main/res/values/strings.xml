@@ -3,6 +3,7 @@
     <string name="titulo_calculadora">Calculadora de IMC</string>
     <string name="dica_peso">Peso em kg</string>
     <string name="dica_altura">Altura em metros</string>
-    <string name="botao_comecar">Começar</string>
-    <string name="mensagem_botao">Vamos calcular o IMC!</string>
+    <string name="botao_calcular">Calcular IMC</string>
+    <string name="resultado_aguardando">Informe seu peso e sua altura</string>
+    <string name="valores_informados">Peso: %1$s kg | Altura: %2$s m</string>
 </resources>

@@ -45,12 +45,22 @@
         app:layout_constraintTop_toBottomOf="@id/campoPeso" />
 
     <Button
-        android:id="@+id/botaoComecar"
+        android:id="@+id/botaoCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/botao_comecar"
+        android:text="@string/botao_calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/campoAltura" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/resultado_aguardando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaoCalcular" />
 </androidx.constraintlayout.widget.ConstraintLayout>
