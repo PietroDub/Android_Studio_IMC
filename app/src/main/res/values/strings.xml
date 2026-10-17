@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">ImcApp</string>
     <string name="titulo_calculadora">Calculadora de IMC</string>
+    <string name="descricao_calculadora">Informe seus dados para descobrir seu índice de massa corporal.</string>
     <string name="dica_peso">Peso em kg</string>
     <string name="dica_altura">Altura em metros</string>
+    <string name="unidade_quilograma">kg</string>
+    <string name="unidade_metro">m</string>
     <string name="botao_calcular">Calcular IMC</string>
     <string name="resultado_aguardando">Informe seu peso e sua altura</string>
     <string name="resultado_imc_classificado">Seu IMC é %1$.2f\nClassificação: %2$s</string>

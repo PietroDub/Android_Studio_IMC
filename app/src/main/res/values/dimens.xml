@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espacamento_pequeno">8dp</dimen>
+    <dimen name="espacamento_medio">16dp</dimen>
+    <dimen name="espacamento_grande">24dp</dimen>
+    <dimen name="espacamento_pagina">24dp</dimen>
+    <dimen name="altura_minima_toque">48dp</dimen>
+    <dimen name="raio_cartao">16dp</dimen>
+</resources>
