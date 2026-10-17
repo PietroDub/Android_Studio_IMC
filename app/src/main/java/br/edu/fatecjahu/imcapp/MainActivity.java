@@ -43,11 +43,27 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            textoResultado.setText(getString(
-                    R.string.valores_informados,
-                    pesoTexto,
-                    alturaTexto
-            ));
+            try {
+                double peso = Double.parseDouble(pesoTexto.replace(',', '.'));
+                double altura = Double.parseDouble(alturaTexto.replace(',', '.'));
+
+                if (peso <= 0) {
+                    campoPeso.setError(getString(R.string.erro_peso_positivo));
+                    campoPeso.requestFocus();
+                    return;
+                }
+
+                if (altura <= 0) {
+                    campoAltura.setError(getString(R.string.erro_altura_positiva));
+                    campoAltura.requestFocus();
+                    return;
+                }
+
+                double imc = peso / (altura * altura);
+                textoResultado.setText(getString(R.string.resultado_imc_simples, imc));
+            } catch (NumberFormatException exception) {
+                textoResultado.setText(R.string.erro_numero_invalido);
+            }
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

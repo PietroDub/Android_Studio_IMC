@@ -5,7 +5,10 @@
     <string name="dica_altura">Altura em metros</string>
     <string name="botao_calcular">Calcular IMC</string>
     <string name="resultado_aguardando">Informe seu peso e sua altura</string>
-    <string name="valores_informados">Peso: %1$s kg | Altura: %2$s m</string>
+    <string name="resultado_imc_simples">Seu IMC é %1$.2f</string>
     <string name="erro_peso_obrigatorio">Informe o peso</string>
     <string name="erro_altura_obrigatoria">Informe a altura</string>
+    <string name="erro_peso_positivo">O peso deve ser maior que zero</string>
+    <string name="erro_altura_positiva">A altura deve ser maior que zero</string>
+    <string name="erro_numero_invalido">Use somente números válidos</string>
 </resources>
