@@ -28,6 +28,21 @@ public class MainActivity extends AppCompatActivity {
             String pesoTexto = campoPeso.getText().toString().trim();
             String alturaTexto = campoAltura.getText().toString().trim();
 
+            campoPeso.setError(null);
+            campoAltura.setError(null);
+
+            if (pesoTexto.isEmpty()) {
+                campoPeso.setError(getString(R.string.erro_peso_obrigatorio));
+                campoPeso.requestFocus();
+                return;
+            }
+
+            if (alturaTexto.isEmpty()) {
+                campoAltura.setError(getString(R.string.erro_altura_obrigatoria));
+                campoAltura.requestFocus();
+                return;
+            }
+
             textoResultado.setText(getString(
                     R.string.valores_informados,
                     pesoTexto,

@@ -6,4 +6,6 @@
     <string name="botao_calcular">Calcular IMC</string>
     <string name="resultado_aguardando">Informe seu peso e sua altura</string>
     <string name="valores_informados">Peso: %1$s kg | Altura: %2$s m</string>
+    <string name="erro_peso_obrigatorio">Informe o peso</string>
+    <string name="erro_altura_obrigatoria">Informe a altura</string>
 </resources>
