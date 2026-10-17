@@ -60,7 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 double imc = peso / (altura * altura);
-                textoResultado.setText(getString(R.string.resultado_imc_simples, imc));
+                String classificacao = classificarImc(imc);
+                textoResultado.setText(getString(
+                        R.string.resultado_imc_classificado,
+                        imc,
+                        classificacao
+                ));
             } catch (NumberFormatException exception) {
                 textoResultado.setText(R.string.erro_numero_invalido);
             }
@@ -71,5 +76,24 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private String classificarImc(double imc) {
+        if (imc < 18.5) {
+            return getString(R.string.classificacao_baixo_peso);
+        }
+        if (imc < 25) {
+            return getString(R.string.classificacao_peso_adequado);
+        }
+        if (imc < 30) {
+            return getString(R.string.classificacao_sobrepeso);
+        }
+        if (imc < 35) {
+            return getString(R.string.classificacao_obesidade_grau_1);
+        }
+        if (imc < 40) {
+            return getString(R.string.classificacao_obesidade_grau_2);
+        }
+        return getString(R.string.classificacao_obesidade_grau_3);
     }
 }

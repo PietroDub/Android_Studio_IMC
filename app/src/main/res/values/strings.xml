@@ -5,7 +5,13 @@
     <string name="dica_altura">Altura em metros</string>
     <string name="botao_calcular">Calcular IMC</string>
     <string name="resultado_aguardando">Informe seu peso e sua altura</string>
-    <string name="resultado_imc_simples">Seu IMC é %1$.2f</string>
+    <string name="resultado_imc_classificado">Seu IMC é %1$.2f\nClassificação: %2$s</string>
+    <string name="classificacao_baixo_peso">Baixo peso</string>
+    <string name="classificacao_peso_adequado">Peso adequado</string>
+    <string name="classificacao_sobrepeso">Sobrepeso</string>
+    <string name="classificacao_obesidade_grau_1">Obesidade grau I</string>
+    <string name="classificacao_obesidade_grau_2">Obesidade grau II</string>
+    <string name="classificacao_obesidade_grau_3">Obesidade grau III</string>
     <string name="erro_peso_obrigatorio">Informe o peso</string>
     <string name="erro_altura_obrigatoria">Informe a altura</string>
     <string name="erro_peso_positivo">O peso deve ser maior que zero</string>
