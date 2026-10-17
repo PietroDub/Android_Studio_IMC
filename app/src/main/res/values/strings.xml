@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImcApp</string>
+    <string name="titulo_calculadora">Calculadora de IMC</string>
+    <string name="dica_peso">Peso em kg</string>
+    <string name="dica_altura">Altura em metros</string>
+    <string name="botao_comecar">Começar</string>
+    <string name="mensagem_botao">Vamos calcular o IMC!</string>
+</resources>
